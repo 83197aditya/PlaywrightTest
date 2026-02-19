@@ -1,0 +1,11 @@
+{
+  "name": "Playwright",
+  "image": "mcr.microsoft.com/playwright:latest",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-playwright.playwright"
+      ]
+    }
+  }
+}
