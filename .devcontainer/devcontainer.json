@@ -1,6 +1,6 @@
 {
   "name": "Playwright",
-  "image": "mcr.microsoft.com/playwright:latest",
+  "image": "mcr.microsoft.com/playwright:v1.58.2-jammy",
   "customizations": {
     "vscode": {
       "extensions": [
