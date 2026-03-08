@@ -8,6 +8,8 @@ export default defineConfig({
   workers: process.env.CI ? 1 : undefined,
   reporter: 'html',
   use: {
+    headless: true,
+    video: 'retain-on-failure',
     baseURL: 'http://localhost:3000',
     trace: 'on-first-retry',
   },
@@ -15,6 +17,10 @@ export default defineConfig({
   projects: [
     {
       name: 'chromium',
+      use: { ...devices['Desktop Chrome'], headless: true },
+    },
+    {
+      name: 'chrome',
       use: { ...devices['Desktop Chrome'], headless: true },
     },
   ],
